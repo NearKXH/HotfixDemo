@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 
+#import "HotfixComponent.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [HotfixComponent registerComponent];
     return YES;
 }
 

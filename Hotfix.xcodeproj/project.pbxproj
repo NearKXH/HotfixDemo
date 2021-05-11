@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		CA89DB18264942A8004F8D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA89DB17264942A8004F8D58 /* Assets.xcassets */; };
 		CA89DB1B264942A8004F8D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA89DB19264942A8004F8D58 /* LaunchScreen.storyboard */; };
 		CA89DB1E264942A8004F8D58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB1D264942A8004F8D58 /* main.m */; };
+		CA89DB45264942A8004F8D58 /* patch.js in Resources */ = {isa = PBXBuildFile; fileRef = CA89DB2A264942A8004F8D58 /* patch.js */; };
+		CA89DB8526494C6C004F8D58 /* HotfixPointerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB722649489D004F8D58 /* HotfixPointerContainer.m */; };
+		CA89DB8F26494D3F004F8D58 /* NSInvocation+Hotfix.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB6C264947B8004F8D58 /* NSInvocation+Hotfix.m */; };
+		CA89DB9A26496721004F8D58 /* HotfixBlockExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB9326495D56004F8D58 /* HotfixBlockExtension.m */; };
+		CA89DB9C26496FB6004F8D58 /* HotfixJsAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB65264946B0004F8D58 /* HotfixJsAdapter.m */; };
+		CA89DB9E26498724004F8D58 /* HotfixComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DB5D2649453E004F8D58 /* HotfixComponent.m */; };
+		CA89DBA12649972E004F8D58 /* patchGlobal.js in Resources */ = {isa = PBXBuildFile; fileRef = CA89DBA02649972E004F8D58 /* patchGlobal.js */; };
+		CA89DBAA2649A294004F8D58 /* JsPatchTestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA89DBA92649A294004F8D58 /* JsPatchTestBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +41,24 @@
 		CA89DB1A264942A8004F8D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA89DB1C264942A8004F8D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA89DB1D264942A8004F8D58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA89DB2A264942A8004F8D58 /* patch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = patch.js; sourceTree = "<group>"; };
+		CA89DB5D2649453E004F8D58 /* HotfixComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotfixComponent.m; sourceTree = "<group>"; };
+		CA89DB5E2649453E004F8D58 /* HotfixComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotfixComponent.h; sourceTree = "<group>"; };
+		CA89DB63264945DA004F8D58 /* HotfixLogDefined.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotfixLogDefined.h; sourceTree = "<group>"; };
+		CA89DB64264946B0004F8D58 /* HotfixJsAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotfixJsAdapter.h; sourceTree = "<group>"; };
+		CA89DB65264946B0004F8D58 /* HotfixJsAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotfixJsAdapter.m; sourceTree = "<group>"; };
+		CA89DB6B264947B8004F8D58 /* NSInvocation+Hotfix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Hotfix.h"; sourceTree = "<group>"; };
+		CA89DB6C264947B8004F8D58 /* NSInvocation+Hotfix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Hotfix.m"; sourceTree = "<group>"; };
+		CA89DB712649489D004F8D58 /* HotfixPointerContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotfixPointerContainer.h; sourceTree = "<group>"; };
+		CA89DB722649489D004F8D58 /* HotfixPointerContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotfixPointerContainer.m; sourceTree = "<group>"; };
+		CA89DB8D26494D30004F8D58 /* HotfixInvocationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotfixInvocationMacro.h; sourceTree = "<group>"; };
+		CA89DB91264953D4004F8D58 /* HotfixPropertyStoreMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotfixPropertyStoreMethod.h; sourceTree = "<group>"; };
+		CA89DB9326495D56004F8D58 /* HotfixBlockExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotfixBlockExtension.m; sourceTree = "<group>"; };
+		CA89DB9426495D56004F8D58 /* HotfixBlockExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotfixBlockExtension.h; sourceTree = "<group>"; };
+		CA89DB9826495DD0004F8D58 /* HotfixInvocationSetDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotfixInvocationSetDefined.h; sourceTree = "<group>"; };
+		CA89DBA02649972E004F8D58 /* patchGlobal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = patchGlobal.js; sourceTree = "<group>"; };
+		CA89DBA82649A294004F8D58 /* JsPatchTestBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsPatchTestBase.h; sourceTree = "<group>"; };
+		CA89DBA92649A294004F8D58 /* JsPatchTestBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsPatchTestBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +79,6 @@
 				A55A76D3250023C0D06B9712 /* Pods-Hotfix.debug.xcconfig */,
 				3E91C23AE80A7EDBB09468CA /* Pods-Hotfix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,8 +103,11 @@
 		CA89DB0A264942A8004F8D58 /* Hotfix */ = {
 			isa = PBXGroup;
 			children = (
+				CA89DB51264942A8004F8D58 /* Hotfix */,
+				CA89DB2A264942A8004F8D58 /* patch.js */,
 				CA89DB0B264942A8004F8D58 /* AppDelegate.h */,
 				CA89DB0C264942A8004F8D58 /* AppDelegate.m */,
+				CA89DBA72649A270004F8D58 /* Test */,
 				CA89DB0E264942A8004F8D58 /* SceneDelegate.h */,
 				CA89DB0F264942A8004F8D58 /* SceneDelegate.m */,
 				CA89DB11264942A8004F8D58 /* ViewController.h */,
@@ -91,6 +119,61 @@
 				CA89DB1D264942A8004F8D58 /* main.m */,
 			);
 			path = Hotfix;
+			sourceTree = "<group>";
+		};
+		CA89DB51264942A8004F8D58 /* Hotfix */ = {
+			isa = PBXGroup;
+			children = (
+				CA89DB5E2649453E004F8D58 /* HotfixComponent.h */,
+				CA89DB5D2649453E004F8D58 /* HotfixComponent.m */,
+				CA89DBA02649972E004F8D58 /* patchGlobal.js */,
+				CA89DB62264945AC004F8D58 /* JsAdapter */,
+				CA89DB63264945DA004F8D58 /* HotfixLogDefined.h */,
+			);
+			path = Hotfix;
+			sourceTree = "<group>";
+		};
+		CA89DB62264945AC004F8D58 /* JsAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				CA89DB64264946B0004F8D58 /* HotfixJsAdapter.h */,
+				CA89DB65264946B0004F8D58 /* HotfixJsAdapter.m */,
+				CA89DB7026494870004F8D58 /* protect */,
+				CA89DB6926494756004F8D58 /* extension */,
+			);
+			path = JsAdapter;
+			sourceTree = "<group>";
+		};
+		CA89DB6926494756004F8D58 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA89DB6B264947B8004F8D58 /* NSInvocation+Hotfix.h */,
+				CA89DB6C264947B8004F8D58 /* NSInvocation+Hotfix.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		CA89DB7026494870004F8D58 /* protect */ = {
+			isa = PBXGroup;
+			children = (
+				CA89DB9426495D56004F8D58 /* HotfixBlockExtension.h */,
+				CA89DB9326495D56004F8D58 /* HotfixBlockExtension.m */,
+				CA89DB712649489D004F8D58 /* HotfixPointerContainer.h */,
+				CA89DB722649489D004F8D58 /* HotfixPointerContainer.m */,
+				CA89DB8D26494D30004F8D58 /* HotfixInvocationMacro.h */,
+				CA89DB91264953D4004F8D58 /* HotfixPropertyStoreMethod.h */,
+				CA89DB9826495DD0004F8D58 /* HotfixInvocationSetDefined.h */,
+			);
+			path = protect;
+			sourceTree = "<group>";
+		};
+		CA89DBA72649A270004F8D58 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CA89DBA82649A294004F8D58 /* JsPatchTestBase.h */,
+				CA89DBA92649A294004F8D58 /* JsPatchTestBase.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		CEEBF4F35E2353FC63B9E453 /* Frameworks */ = {
@@ -162,6 +245,8 @@
 				CA89DB1B264942A8004F8D58 /* LaunchScreen.storyboard in Resources */,
 				CA89DB18264942A8004F8D58 /* Assets.xcassets in Resources */,
 				CA89DB16264942A8004F8D58 /* Main.storyboard in Resources */,
+				CA89DB45264942A8004F8D58 /* patch.js in Resources */,
+				CA89DBA12649972E004F8D58 /* patchGlobal.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA89DB8526494C6C004F8D58 /* HotfixPointerContainer.m in Sources */,
+				CA89DB9E26498724004F8D58 /* HotfixComponent.m in Sources */,
+				CA89DB9C26496FB6004F8D58 /* HotfixJsAdapter.m in Sources */,
+				CA89DB8F26494D3F004F8D58 /* NSInvocation+Hotfix.m in Sources */,
+				CA89DB9A26496721004F8D58 /* HotfixBlockExtension.m in Sources */,
+				CA89DBAA2649A294004F8D58 /* JsPatchTestBase.m in Sources */,
 				CA89DB13264942A8004F8D58 /* ViewController.m in Sources */,
 				CA89DB0D264942A8004F8D58 /* AppDelegate.m in Sources */,
 				CA89DB1E264942A8004F8D58 /* main.m in Sources */,
