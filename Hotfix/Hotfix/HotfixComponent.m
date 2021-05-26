@@ -86,13 +86,19 @@ static NSString * const kHotfixComponentFileDirectory = @"hf_jsContent";
     
 #ifdef DEBUG
 #if HotfixComponentDebug
-    NSString *debugFilePath = [[NSBundle mainBundle] pathForResource:@"patch" ofType:@"js"];
     NSError *err;
-    NSString *jsContent = [NSString stringWithContentsOfFile:debugFilePath encoding:NSUTF8StringEncoding error:&err];
+    NSString *filePath = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    filePath = [filePath stringByAppendingPathComponent:@"patch.js"];
+    NSString *jsContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
+    
+    if (err || !jsContent.length) {
+        NSString *debugFilePath = [[NSBundle mainBundle] pathForResource:@"patch" ofType:@"js"];
+        jsContent = [NSString stringWithContentsOfFile:debugFilePath encoding:NSUTF8StringEncoding error:&err];
+    }
     
     void (^block)(void) = ^ {
         [self.jsAdapter runJS:jsContent completion:^(BOOL succeed) {
-            NSLog(@"js 执行： %d", succeed);
+            NSLog(@"js run： %d", succeed);
         }];
     };
     
